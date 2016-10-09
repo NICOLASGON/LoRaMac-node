@@ -15,6 +15,11 @@ Maintainer: Miguel Luis and Gregory Cristian
 #ifndef __SX1276_H__
 #define __SX1276_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
+#include "radio.h"
+#include "sx1276_config.h"
 #include "sx1276Regs-Fsk.h"
 #include "sx1276Regs-LoRa.h"
 
@@ -118,6 +123,7 @@ typedef struct
  */
 typedef struct SX1276_s
 {
+/*
     Gpio_t        Reset;
     Gpio_t        DIO0;
     Gpio_t        DIO1;
@@ -126,6 +132,7 @@ typedef struct SX1276_s
     Gpio_t        DIO4;
     Gpio_t        DIO5;
     Spi_t         Spi;
+*/
     RadioSettings_t Settings;
 }SX1276_t;
 
